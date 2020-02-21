@@ -1,0 +1,32 @@
+# Created by .ignore support plugin (hsz.mobi)
+# ---> Java
+*.class
+
+# Mobile Tools for Java (J2ME)
+.mtj.tmp/
+
+# Package Files #
+*.jar
+*.war
+*.ear
+*.iml
+*.log
+
+.idea
+logs
+target
+Permanent_Data
+# virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
+hs_err_pid*
+
+.idea/
+spring-boot-dubbo-base/spring-boot-dubbo-base.iml
+spring-boot-dubbo-base/src/main/resources/
+spring-boot-dubbo-base/target/
+spring-boot-dubbo-consumer/spring-boot-dubbo-consumer.iml
+spring-boot-dubbo-consumer/src/test/
+spring-boot-dubbo-consumer/target/
+spring-boot-dubbo-demo.iml
+spring-boot-dubbo-provider/spring-boot-dubbo-provider.iml
+spring-boot-dubbo-provider/src/test/
+spring-boot-dubbo-provider/target/
