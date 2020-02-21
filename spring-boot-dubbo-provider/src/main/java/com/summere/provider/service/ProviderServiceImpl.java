@@ -1,6 +1,7 @@
 package com.summere.provider.service;
 
 import com.summer.base.dto.ProviderTestDTO;
+import com.summer.base.req.ProviderTestReq;
 import com.summer.base.service.IProviderSerice;
 import org.apache.dubbo.config.annotation.Service;
 
@@ -34,4 +35,27 @@ public class ProviderServiceImpl implements IProviderSerice {
         return list;
     }
 
+    @Override
+    public ProviderTestDTO getByCondition(ProviderTestReq req) {
+        if(req.getId() == 1){
+            ProviderTestDTO testDTO1 = new ProviderTestDTO();
+            testDTO1.setId(1);
+            testDTO1.setName("学生");
+            testDTO1.setNumber(100);
+            return testDTO1;
+        }
+        return null;
+    }
+
+    @Override
+    public ProviderTestDTO getByCondition(int id, String name) {
+        if(id == 1 && name.equals("王五")){
+            ProviderTestDTO testDTO1 = new ProviderTestDTO();
+            testDTO1.setId(1);
+            testDTO1.setName("王五");
+            testDTO1.setNumber(100);
+            return testDTO1;
+        }
+        return null;
+    }
 }

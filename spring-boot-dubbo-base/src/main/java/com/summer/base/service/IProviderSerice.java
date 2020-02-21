@@ -1,6 +1,7 @@
 package com.summer.base.service;
 
 import com.summer.base.dto.ProviderTestDTO;
+import com.summer.base.req.ProviderTestReq;
 
 import java.util.List;
 
@@ -14,5 +15,9 @@ import java.util.List;
 public interface IProviderSerice {
 
     List<ProviderTestDTO> queryList();
+
+    ProviderTestDTO getByCondition(ProviderTestReq req);
+
+    ProviderTestDTO getByCondition(int id, String name);
 
 }
