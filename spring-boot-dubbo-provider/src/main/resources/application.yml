@@ -1,0 +1,19 @@
+server:
+  port: 8861
+dubbo:
+  application:
+    name: dubbo-provider
+    #禁用QOS同一台机器可能会有端口冲突现象
+    qos-enable: false
+    qos-accept-foreign-ip: false
+  # 配置注册中心
+  registry:
+    address: nacos://192.168.0.107:8848
+  # 传输协议-协议由服务指定，消费方被动接受
+  protocol:
+    name: dubbo
+    port: 20880
+spring:
+  main:
+    # 解决Bean重复定义问题
+    allow-bean-definition-overriding: true

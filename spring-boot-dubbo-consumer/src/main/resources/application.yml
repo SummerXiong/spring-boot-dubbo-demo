@@ -1,0 +1,16 @@
+server:
+  port: 8862
+dubbo:
+  application:
+    name: dubbo-consumer
+    #禁用QOS同一台机器可能会有端口冲突现象
+    qos-enable: false
+  # 配置注册中心
+  registry:
+    address: nacos://192.168.0.107:8848
+  consumer:
+    timeout: 4000
+spring:
+  main:
+    # 解决Bean重复定义问题
+    allow-bean-definition-overriding: true
